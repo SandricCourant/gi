@@ -1,0 +1,13 @@
+<table>
+        <tr>
+            <th>Character</th>
+            <th>Movie</th>
+            <th>Year</th>
+        </tr>
+        <tr *ngFor="let char of characters | keyvalue">
+            <td [ngClass]="{'yellowHighlighted':isHighlighted}">{{char.value.name}}</td>
+            <td>{{char.value.movie}}</td>
+            <td>{{char.value.year}}</td>
+        </tr>
+
+</table>

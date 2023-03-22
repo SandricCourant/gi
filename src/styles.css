@@ -12,11 +12,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 4vh;
 }
 
 .item {
     margin: 2vh 0.5vw 2vh 0.5vw;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
 }
 
 .col {

@@ -9,6 +9,8 @@ import { ButtonComponent } from './button/button.component';
 import { FormsModule } from '@angular/forms';
 import { FirstImageComponent } from './first-image/first-image.component';
 import { CounterComponent } from './counter/counter.component';
+import { SecondImageComponent } from './second-image/second-image.component';
+import { MovieCharactersComponent } from './movie-characters/movie-characters.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,9 @@ import { CounterComponent } from './counter/counter.component';
     FooterComponent,
     ButtonComponent,
     FirstImageComponent,
-    CounterComponent
+    CounterComponent,
+    SecondImageComponent,
+    MovieCharactersComponent
   ],
   imports: [
     BrowserModule,

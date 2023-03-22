@@ -1,0 +1,8 @@
+<div class="center-container">
+    <div class="col">
+        <img class="item" [src]="img[0]" [alt]="img[1]" width="400" *ngFor="let img of imgs">
+    </div>
+    <div class="col">
+        <img class="item" [src]="img.link" [alt]="img.desc" width="400" *ngFor="let img of images">
+    </div>
+</div>

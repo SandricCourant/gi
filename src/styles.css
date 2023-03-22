@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.item {
+    margin: 2vh 0.5vw 2vh 0.5vw;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}

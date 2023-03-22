@@ -6,8 +6,8 @@
         </tr>
         <tr *ngFor="let char of characters | keyvalue">
             <td [ngClass]="{'yellowHighlighted':isHighlighted}">{{char.value.name}}</td>
-            <td>{{char.value.movie}}</td>
-            <td>{{char.value.year}}</td>
+            <td [ngClass]="{'greenHighlighted':isHighlighted}">{{char.value.movie}}</td>
+            <td [ngClass]="{'blueHighlighted':isHighlighted}">{{char.value.year}}</td>
         </tr>
 
 </table>

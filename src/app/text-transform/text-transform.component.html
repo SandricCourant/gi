@@ -1,0 +1,11 @@
+<!-- <div *ngFor=" let price of prices ">
+    <span>{{price| currency:'EUR'}}</span>
+</div>
+<div *ngFor=" let nb of sales">
+    <span>{{nb | percent}}</span>
+</div> -->
+<div class="item" *ngFor="let sentence of sentences">
+        <span *ngIf="isTruncate">{{sentence | truncate}}</span>
+        <span *ngIf="!isTruncate" class="develop" title="truncate" (click)="changeTruncate()">{{sentence}}</span>
+        <span class="develop" (click)="changeTruncate()" title="develop" *ngIf="isTruncate">...</span>
+</div>

@@ -11,6 +11,9 @@ import { FirstImageComponent } from './first-image/first-image.component';
 import { CounterComponent } from './counter/counter.component';
 import { SecondImageComponent } from './second-image/second-image.component';
 import { MovieCharactersComponent } from './movie-characters/movie-characters.component';
+import { TextTransformComponent } from './text-transform/text-transform.component';
+import { TruncatePipe } from './truncate.pipe';
+import { HighlighterDirective } from './highlighter.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,10 @@ import { MovieCharactersComponent } from './movie-characters/movie-characters.co
     FirstImageComponent,
     CounterComponent,
     SecondImageComponent,
-    MovieCharactersComponent
+    MovieCharactersComponent,
+    TextTransformComponent,
+    TruncatePipe,
+    HighlighterDirective
   ],
   imports: [
     BrowserModule,

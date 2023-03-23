@@ -5,9 +5,13 @@
         <button class="item" (click)="changeImg(3)">3</button>
     </div>
     <div class="center-container col" [ngSwitch]="displayImg">
-        <img [src]="link" [alt]="desc" width="500px" *ngSwitchCase="1">
-        <img [src]="link2" [alt]="desc2" width="500px" *ngSwitchCase="2">
-        <img [src]="link3" [alt]="desc3" width="500px" *ngSwitchCase="3">
+        <div class="center-container">
+            <button class="item" (click)="slideImg(-1)">&lArr;</button>
+            <img [src]="link" [alt]="desc" width="500px" *ngSwitchCase="1">
+            <img [src]="link2" [alt]="desc2" width="500px" *ngSwitchCase="2">
+            <img [src]="link3" [alt]="desc3" width="500px" *ngSwitchCase="3">
+            <button class="item" (click)="slideImg(1)">&rArr;</button>
+        </div>
         <p *ngSwitchCase="1">{{desc}}</p>
         <p *ngSwitchCase="2">{{desc2}}</p>
         <p *ngSwitchCase="3">{{desc3}}</p>

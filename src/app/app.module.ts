@@ -14,6 +14,7 @@ import { MovieCharactersComponent } from './movie-characters/movie-characters.co
 import { TextTransformComponent } from './text-transform/text-transform.component';
 import { TruncatePipe } from './truncate.pipe';
 import { HighlighterDirective } from './highlighter.directive';
+import { MultipleEventsComponent } from './multiple-events/multiple-events.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { HighlighterDirective } from './highlighter.directive';
     MovieCharactersComponent,
     TextTransformComponent,
     TruncatePipe,
-    HighlighterDirective
+    HighlighterDirective,
+    MultipleEventsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,4 +8,5 @@
         <span *ngIf="isTruncate">{{sentence | truncate}}</span>
         <span *ngIf="!isTruncate" class="develop" title="truncate" (click)="changeTruncate()">{{sentence}}</span>
         <span class="develop" (click)="changeTruncate()" title="develop" *ngIf="isTruncate">...</span>
+        <a routerLink="/button">Cliquez ici</a>
 </div>

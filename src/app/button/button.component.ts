@@ -1,20 +1,29 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class ButtonComponent implements OnInit{
-  name:string = "";
-  title:string = "";
-  
+export class ButtonComponent implements OnInit {
+  name: string = "";
+  title: string = "";
+  id: string = "";
+
   @Output() newNameEvent = new EventEmitter<string>();
 
-  constructor(){
-    
+  constructor(private route: ActivatedRoute) {
+    this.title = "Click on me !";
   }
   ngOnInit(): void {
-    this.title = "Click on me !";
+    // this.name= this.route.snapshot.paramMap.get('name') || "Pas de name";
+    // this.id = this.route.snapshot.paramMap.get('id') || "Pas d'ID";
+
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+      this.name = params['name'];
+    })
   }
   setValue = () => {
     this.name = "proud of you !";

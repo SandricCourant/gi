@@ -15,6 +15,8 @@ import { TextTransformComponent } from './text-transform/text-transform.componen
 import { TruncatePipe } from './truncate.pipe';
 import { HighlighterDirective } from './highlighter.directive';
 import { MultipleEventsComponent } from './multiple-events/multiple-events.component';
+import { DataService } from './data.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,9 +35,10 @@ import { MultipleEventsComponent } from './multiple-events/multiple-events.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

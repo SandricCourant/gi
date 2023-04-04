@@ -6,7 +6,7 @@ import { ButtonComponent } from './button/button.component';
 
 const routes: Routes = [
   {path: 'text-transform', component: TextTransformComponent},
-  {path: "button/:id/:name", component: ButtonComponent},
+  {path: "button", component: ButtonComponent},
   {path: "first-image", component: FirstImageComponent}
 ];
 
